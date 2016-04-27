@@ -1,0 +1,23 @@
+Source: lstore
+Priority: optional
+Maintainer: Matthew Heller <matthew.f.heller@accre.vanderbilt.edu>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Section: libs
+Homepage: https://github.com/accre/lstore-release
+#Vcs-Git: git://github.com/accre/lstore-release
+#Vcs-Browser: https://github.com/accre/lstore-release
+
+Package: lstore-dev
+Section: libdevel
+Architecture: any
+Depends: lstore (= ${binary:Version}), ${misc:Depends}
+Description: The development files for lstore and associated components
+ The development files for lstore and associated components
+
+Package: lstore
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: L-Store, a flexible distributed data storage framework & sub-components
+ L-Store, a flexible distributed data storage framework and associated components
+ (tbx, gop, ibp, lio)

@@ -4,6 +4,10 @@ if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Debug)
 endif()
 
+if(NOT LSTORE_PROJECT_VERSION)
+    set(LSTORE_PROJECT_VERSION "0.5.1-unknown_commit")
+endif()
+
 # Options
 option(ENABLE_ASAN "Enable address sanitizer" OFF)
 option(ENABLE_MSAN "Enable memory sanitizer" OFF)
