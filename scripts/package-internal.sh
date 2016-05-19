@@ -69,7 +69,7 @@ if [[ $PACKAGE_SUFFIX == deb ]]; then
 (
     umask 000
     mkdir -p $PACKAGE_REPO
-    cp -r ../lstore_*.{deb,tar.*z,changes} $PACKAGE_REPO
+    cp -r ../lstore*.{deb,tar.*z,changes} $PACKAGE_REPO
     chmod -R u=rwX,g=rwX,o=rwX $PACKAGE_REPO/*
     # Update lstore-release if we built it
     if test -n "$(shopt -s nullglob; set +u; echo lstore-release*.deb)"; then
