@@ -95,4 +95,4 @@ fi
 
 set +x 
 
-note "Done! The new packages can be found in ./package/$PACKAGE_SUBDIR"
+note "Done! The new packages can be found in ./build/package/$PACKAGE_SUBDIR"
